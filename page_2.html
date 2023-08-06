@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+    <link rel="stylesheet" href="style_page_2.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button class="mobile-nav-toggle" aria-controls="primary_NavBar" aria-expanded="false"><span class="sr-only"></span></button>
+        <div class="logo">
+            <a href="#"><i class="ri-home-heart-fill"></i><span>Logo</span></a>
+        </div>
+            <ul class="navBar_primary" id="primary_NavBar" data-visible="false">
+                <li><a href="index.htmls" class="home">Home</a></li>
+                <li><a href="index.htmls">About Us</a></li>
+                <li><a href="index.htmls">Projects</a></li>
+                <li><a href="index.htmls">Contact Us</a></li>
+            </ul>
+            <div class="main">
+                <a href="#" class="user"><i class="ri-user-3-line"></i>Sign In</a>
+                <a href="#">Register</a>
+            </div>
+    </header>
+    <div class="intro">
+        <div class="row">
+            <div class="col">
+                <h1>
+                    Rules
+                </h1>
+                <p>
+                    You find six inscriptions that correspond to the names of region, cities and kingdom.
+                    Now its your job is to solve the puzzle and make the treasure yours <br>
+                    <br>
+                    Or else...
+                    The treasure will be hidden forever and will get trapped in the traps set for protecting the treasure...
+                    <br>
+                    <br>
+                    BEWARE...
+                    <br>
+                    <br>
+                    The rules are simple. You will have three tries to get the answer right and if you manage to get the answers right the treasure is you'rs. If you fail the website will close and you can never get the treasure.
+                </p>
+            </div>
+            <div class="col">
+                <div class="card traveler">
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="next">
+        <div class="row">
+            <div class="btns_pre col">
+                <a href="page_1.html">
+                    <button type="button">Previous</button>
+                </a>
+            </div>
+            <div class="btns col">
+                <a href="page_3.html">
+                    <button type="button">Next</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const primaryNav = document.querySelector('.navBar_primary')
+    const navtoggle = document.querySelector('.mobile-nav-toggle')
+
+    navtoggle.addEventListener("click", () =>{
+        const visibility = primaryNav.getAttribute('data-visible')
+        if(visibility === "false")
+        {
+            primaryNav.setAttribute("data-visible",true)
+        }
+        else
+        {
+            primaryNav.setAttribute("data-visible",false)
+        }
+    })
+</script>
+</html>

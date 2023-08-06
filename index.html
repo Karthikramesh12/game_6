@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style_home_page.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button class="mobile-nav-toggle" aria-controls="primary_NavBar" aria-expanded="false"><span class="sr-only"></span></button>
+        <div class="logo">
+            <a href="#"><i class="ri-home-heart-fill"></i><span>Logo</span></a>
+        </div>
+            <ul class="navBar_primary" id="primary_NavBar" data-visible="false">
+                <li><a href="#home" class="home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="main">
+                <a href="#" class="user"><i class="ri-user-3-line"></i>Sign In</a>
+                <a href="#">Register</a>
+            </div>
+    </header>
+    <div id="home">
+        <div class="row">
+            <div class="col">
+                <h1>Welcome</h1>
+                <p>
+                    Test your problem solving skills here. This is puzzle which you can solve where there will be few images which you have to decode. click on the 'Start Now' to begin the game. 
+                </p>
+                <a href="page_1.html">
+                    <button type="button">Start Now</button>
+                </a>
+            </div>
+            <div class="col">
+                <div class="card card1">
+                    <h5>Murder Mysteries</h5>
+                    <p>
+                        We are working on this part of the game. Make sure to follow us on differt social medias to get notify when the game is out.
+                    </p>
+                </div>
+                <div class="card card2">
+                    <h5>Quick Math</h5>
+                    <p>
+                        We are working on this part of the game. Make sure to follow us on differt social medias to get notify when the game is out.
+                    </p>
+                </div>
+                <div class="card card3">
+                    <h5>IQ Test</h5>
+                    <p>
+                        We are working on this part of the game. Make sure to follow us on differt social medias to get notify when the game is out.
+                    </p>
+                </div>
+                <div class="card card4">
+                    <h5>Ranked Games</h5>
+                    <p>
+                        We are working on this part of the game. Make sure to follow us on differt social medias to get notify when the game is out.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="row">
+            <div class="col">
+                <h1>About Us</h1>
+                <p>
+                    We are a team of five students studying BE and we desinged this site as a project to test our skills in web development.
+                </p>
+                <button type="button">Read More</button>
+            </div>
+            <div class="col">
+                <div class="card about_us"><a href="#about"></a></div>
+            </div>
+        </div>
+    </div>
+    <div id="project">
+        <div class="row">
+            <div class="col">
+                <h1>Projects</h1>
+                <p>
+                    We as a team have created few projects based on artificial intelligence and machine learning and few websites which we are working on.
+                </p>
+            </div>
+            <div class="col">
+                <div class="card projects"><a href="#project"></a></div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="row">
+            <div class="col">
+                <h1>
+                    Contact Us
+                </h1>
+                <p>
+                    You can contact us on any of these social media
+                </p>
+            </div>
+            <div class="col">
+                <div class="icons">
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-reddit-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const primaryNav = document.querySelector('.navBar_primary')
+    const navtoggle = document.querySelector('.mobile-nav-toggle')
+
+    navtoggle.addEventListener("click", () =>{
+        const visibility = primaryNav.getAttribute('data-visible')
+        if(visibility === "false")
+        {
+            primaryNav.setAttribute("data-visible",true)
+        }
+        else
+        {
+            primaryNav.setAttribute("data-visible",false)
+        }
+    })
+</script>
+</html>

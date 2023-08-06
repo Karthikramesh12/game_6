@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Crete+Round:ital@0;1&family=Montserrat:wght@100&family=Poppins:wght@200;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-weight: 100;
+
+}
+:root
+{
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: #29fd53;
+}
+body{
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+header{
+    /* position: fixed; */
+    display: flex;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    background: transparent;
+    padding: 28px 12%;
+}
+.logo
+{
+    display: flex;
+    align-items: center;    
+}
+.logo i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+    font-family: "Poppins";
+}
+.logo span
+{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+header ul{
+    display: flex;
+}
+header ul li a 
+{
+    color: var(--text-color);
+    transition: all 0.5s ease;
+    font-family: "Poppins";
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 30px;
+    padding: 5px 0;
+}
+header ul li a:hover
+{
+    color: var(--main-color);
+}
+header ul li a.home
+{
+    color: var(--main-color);
+}
+.main
+{
+    display: flex;
+    align-items: center;
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: "Poppins";
+    transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.user
+{
+    display: flex;
+    align-items: center;
+}
+.user i{
+    color: var(--main-color);
+    font-size: 28px;
+    font-family: "Poppins";
+    margin-right: 3px;
+}
+.main a:hover
+{
+    color: var(--main-color);
+}
+.mobile-nav-toggle
+{
+    display: none;
+    color: var(--main-color);
+}
+.row
+{
+    display: flex;
+    height: 35.31rem;
+    align-items: center;
+    margin-left: 218px;
+}
+.col
+{
+    flex-basis: 50%;
+}
+h1
+{
+    color: var(--text-color);
+    font-family: "Poppins";
+    font-size: 71px;
+    font-weight: 100;
+}
+p
+{
+    color: var(--text-color);
+    font-family: "Poppins";
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 15px;
+}
+button
+{
+    width: 180px;
+    color: var(--main-color);
+    font-size: 20px;
+    padding: 12px 0;
+    background: #098fb0;
+    border: 0;
+    border-radius: 150px;
+    outline: none;
+    margin-top: 30px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #063541;
+}
+.card
+{
+    width: 200px;
+    height: 172px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 12px 26px;
+    margin-top: 85px;
+    margin-bottom: -90px;
+    transition: all 0.5s ease;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card1
+{
+    background: url("murder_mystry.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1000;
+}
+.card2
+{
+    background: url("quick_math.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1000;
+}
+.card3
+{
+    background: url("iq_test.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1000;
+}
+.card4
+{
+    background: url("ranked-background.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1000;
+}
+h5
+{
+    color: var(--main-color);
+    font-family: "Poppins";
+    font-weight: 100;
+    font-size: 18px;
+}
+.card p{
+    font-family: "Poppins";
+    font-weight: 100;
+    font-size: 8px;
+    color: var(--main-color);
+}
+.icons i
+{
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 55px;
+    margin: 50px 24px;
+    padding: 6px;
+    margin-right: auto;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.icons i:hover{
+    color: #063541;
+}
+.about_us
+{
+    background: url("about_us.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1000;
+    width: 397px;
+    height: 300px;
+}
+.projects
+{
+    background: url("project.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1000;
+    width: 397px;
+    height: 300px;
+}
+.traveler{
+    margin-top: 16.29rem;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1000;
+    width: 397px;
+    height: 300px;
+}
+.btns
+{
+    margin-top: -137px;
+    margin-left: 32.4rem;
+}
+.btns_pre
+{
+    margin-top: -137px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* responsive */
+@media (max-width:1124px) {
+    html
+    {
+        font-size: 80%;
+    }
+}
+
+@media (max-width:997px) {
+    header ul{
+        display: flex;
+        position: fixed;
+        inset: 0 0 0 30%;
+        padding: auto;
+        flex-direction: column;
+        margin: 0 30px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+    }
+    header ul li a
+    {
+        line-height: 50px;
+        margin: 0 30px;
+    }
+    header ul:hover
+    {
+        color: var(--main-color);
+    }
+    .mobile-nav-toggle
+    {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: url("hamburger.jpg");
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        justify-items: center;   
+        background-attachment:initial;
+        background-repeat: no-repeat;
+        border-color: none;
+        height: 2rem;
+        width: 2.4rem;
+        top: 2rem;
+        right: 2rem;
+    }
+    header ul[data-visible="true"]{
+        transform: translateX(0%);
+        transition: transform 350ms ease-out;   
+    }
+}
+@supports (backdrop-filter: blur(0.1rem))
+{
+    header ul 
+    {
+        background: hsl(0 0 100%/0.2);
+        backdrop-filter: blur(0.1rem);
+    }
+}
+@media (max-width:866px) {
+    html
+    {
+        font-size: 60%;
+    }
+}
+@media (max-width:965px) {
+    html
+    {
+        font-size: 55%;
+    }
+}

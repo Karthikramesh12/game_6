@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="style_page_1.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button class="mobile-nav-toggle" aria-controls="primary_NavBar" aria-expanded="false"><span class="sr-only"></span></button>
+        <div class="logo">
+            <a href="#"><i class="ri-home-heart-fill"></i><span>Logo</span></a>
+        </div>
+            <ul class="navBar_primary" id="primary_NavBar" data-visible="false">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+            </ul>
+            <div class="main">
+                <a href="#" class="user"><i class="ri-user-3-line"></i>Sign In</a>
+                <a href="#">Register</a>
+            </div>
+    </header>
+    <div class="intro">
+        <div class="row">
+            <div class="col">
+                <h1>
+                    Welcome Traveler 
+                </h1>
+                <p>
+                    So after wandering many countries and going through lots of suffering, you finally got the treasure box, you’re just one step away to become the richest person on the planet.
+                    For the last stage all you have to do is decode this simple puzzles and unlock the treasure.
+                </p>
+            </div>
+            <div class="col">
+                <div class="card traveler">
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="next">
+        <div class="btns row">
+            <div class="col">
+
+            </div>
+            <div class="col">
+                <a href="page_2.html">
+                    <button type="button">Next</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const primaryNav = document.querySelector('.navBar_primary')
+    const navtoggle = document.querySelector('.mobile-nav-toggle')
+
+    navtoggle.addEventListener("click", () =>{
+        const visibility = primaryNav.getAttribute('data-visible')
+        if(visibility === "false")
+        {
+            primaryNav.setAttribute("data-visible",true)
+        }
+        else
+        {
+            primaryNav.setAttribute("data-visible",false)
+        }
+    })
+</script>
+</html>
